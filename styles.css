@@ -141,9 +141,11 @@ form .form-element{
     font-family: inherit;
 }
 
-input:focus-visible {
-    outline-offset: 1px;
-    outline: var(--secondary-background-color) 20px;
+input:focus {
+    outline-offset: 0;
+    outline: var(--main-font-color) 1px;
+    border: 2px solid var(--button-bakcground-color);
+    box-shadow: 2px 2px 4px var(--button-bakcground-color);
 }
 
 .form-element input:invalid {
